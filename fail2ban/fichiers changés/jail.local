@@ -1,0 +1,15 @@
+- on ajoute adminer dans les watcher de fail2ban
+
+[adminer]
+enabled = true
+filter = adminer
+port = http,https
+logpath = /var/log/adminer-access.log
+
+- on enable l'écoute sur nginx-http-auth
+
+[nginx-http-auth]
+# mode = normal
+enabled = true
+port    = http,https
+logpath = %(nginx_error_log)s

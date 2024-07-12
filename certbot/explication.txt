@@ -1,0 +1,5 @@
+Pour vérifier tous mes services et pouvoir avoir un letsencrypt pour tous mes liens http et passer sous https
+
+j'ai installé certbot sur mon vps puis lancer la génération des certificats de chaque domaine et sous domaine 
+
+ensuite pour faire le renouvellement tout seul j'ai ajouté une commande dans le fichier crontab et faire en sorte que les output du certbot aillent dans un fichier log 

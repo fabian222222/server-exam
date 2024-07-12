@@ -1,0 +1,12 @@
+J'ai installé fail2ban sur mon serveur ubuntu 
+
+comme il est dit de pas changer le fichier jail.conf, j'ai cp le fichier en l'appelant jail.local
+il permet de changer les conditions de ban, j'ai changé le maxtry et temps de ban (cf: jail.local)
+
+comme fail2ban check ssh par défaut j'ai pas eu de changements à faire
+
+l'installationde fail2ban nous donne des filters par défaut dont celui de nginx avec nginx-http-auth.conf dans filters 
+il faut alors seulement l'activer dans jail.local en ajoutant enable = true
+
+Par contre le service adminer que nous avons lancé avec docker n'a pas tout ça, alors il faut créer un fichier adminer.conf dans filter.dans
+et ajouter dans les conf a regarder dans le fichier jail.local

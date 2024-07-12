@@ -1,0 +1,7 @@
+pour installer un smb il faut : 
+
+- installer samba sur son vps
+- config le fichier smb.conf (cf: smb.conf) pour ajouter le dosseir que je veux rendre accessible
+- changer les regles du parfeu pour authoriser samba
+- crer un compte smb 
+- se connecter a partir de votre pc

@@ -1,0 +1,12 @@
+J'ai ouvert plusieurs host pour mes services
+
+Pour commencer j'ai setup mon domain avec server-fabian.xyz
+J'ai ouvert deux sous domaines pour adminer et le back : adminer.server-fabian.xyz & back.server-fabian.xyz
+
+server-fabian.xyz affiche le front alors je l'ai fait pointer vers un dossier content un fichier html et js
+
+Pour le back et adminer j'ai fait pointer sur un docker (cf: docker-compose.yml)
+
+
+Bien sur faut pas oublier de créer un lien symbolique avec la commande ln -s <ton fichier dans sites-available> <ton fichier dans sites-enabled>
+

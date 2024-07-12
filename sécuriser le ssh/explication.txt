@@ -1,0 +1,9 @@
+Pour sécuriser le ssh j'ai : 
+- généré une nouvelle clé ssh sur mon ordi perso avec adduser
+- je l'ajoute au groupe sudo avec usermod -aG sudo <le user>
+- je me connecte sur ce user avec su - <user>
+- j'ajoute ma clé ssh dans authorized_keys
+- je supprime l'user root avec deluser root
+
+- je change le port de base (cf: sshd_config) et ajouter une écoute sur le port attribué a ssh
+- je change la valeur de PermitRootLogin à "no" pour pas laisser qq se connecter en tant que root

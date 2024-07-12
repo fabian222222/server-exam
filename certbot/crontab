@@ -1,0 +1,1 @@
+* * * * *  sudo certbot renew --dry-run >> /var/log/renew-log && echo "SSL certif updated & launched with cron | log in /var/log/renew-log" > /dev/pts/0
